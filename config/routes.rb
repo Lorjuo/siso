@@ -1,4 +1,14 @@
 Siso::Application.routes.draw do
+
+  resources :products
+
+
+  devise_for :users
+  # Set scope admin to differentiate between devise and custom user administration
+  scope "/admin" do
+    resources :users
+  end
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

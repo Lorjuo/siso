@@ -1,0 +1,8 @@
+Today:
+ ☐ Implement login and logout (Railscast #209: 3:50min)
+ ☐ Implement Bootstrap
+ ☐ Implement SimpleForms
+ ☐ Implement Registration
+Future:
+ ☐ Use strong_parameters
+ ☐ Use Roles and authorization by strong_parameters
