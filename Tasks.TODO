@@ -1,11 +1,13 @@
 Today:
  ✔ Implement login and logout @done (13-01-05 16:57)
- ✔ Implement Bootstrap @done (13-01-05 16:57)
+ ✔ Implement bootstrap @done (13-01-05 16:57)
  ✔ Implement SimpleForms @done (13-01-05 16:57)
- ✔ Implement Registration @done (13-01-05 16:57)
- ☐ Create contract model
- ✔ Implement PaperTrails @done (13-01-05 19:07)
- ☐ Implement StateMachine
+ ✔ Implement registration @done (13-01-05 16:57)
+ ✔ Create request model @done (13-01-05 23:17)
+ ✔ Implement paper_trails @done (13-01-05 19:07)
+ ✔ Implement state_machine @done (13-01-05 23:17)
+ Impplement multilaunguage support
 Future:
  ☐ Use strong_parameters
  ☐ Use Roles and authorization by strong_parameters
+ ☐ Implement Tests

@@ -89,5 +89,5 @@ private
     view_context.link_to("undo",
       revert_version_path(@product.versions.scoped.last),
       :method => :post)  
-  end 
+  end
 end

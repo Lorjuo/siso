@@ -1,5 +1,8 @@
 Siso::Application.routes.draw do
 
+  resources :requests
+
+
   resources :products
 
   post "versions/:id/revert" => "versions#revert", :as => "revert_version"
