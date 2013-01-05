@@ -1,8 +1,11 @@
 Today:
- ☐ Implement login and logout (Railscast #209: 3:50min)
- ☐ Implement Bootstrap
- ☐ Implement SimpleForms
- ☐ Implement Registration
+ ✔ Implement login and logout @done (13-01-05 16:57)
+ ✔ Implement Bootstrap @done (13-01-05 16:57)
+ ✔ Implement SimpleForms @done (13-01-05 16:57)
+ ✔ Implement Registration @done (13-01-05 16:57)
+ ☐ Create contract model
+ ✔ Implement PaperTrails @done (13-01-05 19:07)
+ ☐ Implement StateMachine
 Future:
  ☐ Use strong_parameters
  ☐ Use Roles and authorization by strong_parameters

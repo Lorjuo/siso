@@ -2,6 +2,8 @@ Siso::Application.routes.draw do
 
   resources :products
 
+  post "versions/:id/revert" => "versions#revert", :as => "revert_version"
+
   devise_for :users
   # Set scope admin to differentiate between devise and custom user administration
   scope "/admin" do

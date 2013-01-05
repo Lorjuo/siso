@@ -11,15 +11,18 @@ gem 'devise'
   # Role management
    gem 'rolify'
 
+# Bootstrap
+gem 'bootstrap-sass', '2.1'
+  # Generator
+  gem 'bootstrap-generators', '~> 2.1'
+
 # Forms
   # Simple Form
   gem 'simple_form'
   gem 'country_select'
 
-# bootstrap
-gem 'bootstrap-sass', '2.1'
-  # Generator
-  gem 'bootstrap-generators', '~> 2.1'
+# Versioning
+gem "paper_trail"
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
