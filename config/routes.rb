@@ -2,7 +2,6 @@ Siso::Application.routes.draw do
 
   resources :products
 
-
   devise_for :users
   # Set scope admin to differentiate between devise and custom user administration
   scope "/admin" do
