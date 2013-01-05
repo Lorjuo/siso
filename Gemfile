@@ -8,6 +8,8 @@ gem 'bootstrap-will_paginate', '0.0.6'
 
 # Authorization
 gem 'devise'
+  # Role management
+   gem 'rolify'
 
 # Forms
   # Simple Form
