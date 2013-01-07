@@ -1,29 +1,29 @@
 # Sample localization file for English. Add more files in this directory for other locales.
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
-en:
+de:
   views:
     users:
       index:
-        title: "Listing users"
+        title: "Benutzerübersicht"
       edit:
         title: ""
     app: # application
-      title: "Project name"
+      title: "Projektname"
       _nav: # navigation
         links:
           home: "Home"
-          manage: "Manage"
-          account: "Edit account"
-          login: "Login"
-          logout: "Logout"
-          signup: "Sign up"
-          about: "About"
-          contact: "Contact"
+          manage: "Verwalte"
+          account: "Profil bearbeiten"
+          login: "Anmelden"
+          logout: "Abmelden"
+          signup: "Registrieren"
+          about: "Über uns"
+          contact: "Kontakt"
       buttons:
-        show: "show"
-        edit: "edit"
-        destroy: "destroy"
+        show: "details"
+        edit: "bearbeiten"
+        destroy: "löschen"
   ctrls: # controller
     users:
       create:

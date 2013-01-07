@@ -6,7 +6,11 @@ Today:
  ✔ Create request model @done (13-01-05 23:17)
  ✔ Implement paper_trails @done (13-01-05 19:07)
  ✔ Implement state_machine @done (13-01-05 23:17)
- Impplement multilaunguage support
+ ☐ Implement multilaunguage support
+ ✔ Reorganize navbar @done (13-01-06 10:53)
+ ☐ Implement validations
+ ☐ Implement population and factories
+ ✔ Implement pagination @done (13-01-06 19:21)
 Future:
  ☐ Use strong_parameters
  ☐ Use Roles and authorization by strong_parameters

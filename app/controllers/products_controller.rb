@@ -10,6 +10,17 @@ class ProductsController < ApplicationController
     end
   end
 
+  # GET /products
+  # GET /products.json
+  def display
+    @products = Product.all
+
+    respond_to do |format|
+      format.html
+      format.json { render json: ProductsDatatable.new(view_context) }
+    end
+  end
+
   # GET /products/1
   # GET /products/1.json
   def show

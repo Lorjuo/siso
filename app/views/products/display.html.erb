@@ -1,0 +1,32 @@
+<div class="page-header">
+  <%= link_to new_product_path, :class => 'btn btn-primary' do %>
+    <i class="icon-plus icon-white"></i>
+    New Product
+  <% end %>
+  <h1>Listing products</h1>
+</div>
+
+<!-- Have a look at: http://www.datatables.net/blog/Twitter_Bootstrap -->
+<table class="table table-bordered table-striped display datatable" data-source="<%= display_products_url(format: "json") %>">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Price</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @products.each do |product| %>
+        <tr>
+          <td><%= product.name %></td>
+          <td><%= product.price %></td>
+          <td><%= link_to 'Show', product %></td>
+          <td><%= link_to 'Edit', edit_product_path(product) %></td>
+          <td><%= link_to 'Destroy', product, confirm: 'Are you sure?', method: :delete %></td>
+        </tr>
+    <% end %>
+  </tbody>
+</table>

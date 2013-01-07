@@ -2,9 +2,6 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.10'
 gem 'bcrypt-ruby', '3.0.1'
-gem 'faker', '1.0.1'
-gem 'will_paginate', '3.0.3'
-gem 'bootstrap-will_paginate', '0.0.6'
 
 # Authorization
 gem 'devise'
@@ -16,10 +13,28 @@ gem 'bootstrap-sass', '2.1'
   # Generator
   gem 'bootstrap-generators', '~> 2.1'
 
+# Factory girl
+gem 'factory_girl_rails', '~> 4.1.0'
+
+# Faker
+gem 'faker', '~> 1.0.1'
+
 # Forms
   # Simple Form
   gem 'simple_form'
   gem 'country_select'
+
+# JavaScript
+  # jQuery
+  gem 'jquery-rails'
+  gem 'jquery-ui-rails'
+
+# Pagination
+gem 'will_paginate', '3.0.3'
+gem 'bootstrap-will_paginate', '0.0.6'
+
+# Table
+gem 'jquery-datatables-rails'#, github: 'rweng/jquery-datatables-rails'
 
 # Versioning
 gem "paper_trail"
@@ -33,14 +48,16 @@ gem 'state_machine'
 
 group :development, :test do
   gem 'mysql2'
-  gem 'rspec-rails', '2.11.0'
+  gem 'rspec-rails', '~> 2.12.0'
 end
 
 group :test do
   gem 'capybara', '1.1.2'
-  gem 'factory_girl_rails', '4.1.0'
   gem 'cucumber-rails', '1.2.1', :require => false
   gem 'database_cleaner', '0.7.0'
+
+  # Spork
+  gem "spork", "> 0.9.0.rc"
 end
 
 group :production do
@@ -59,8 +76,6 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3'
 end
-
-gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

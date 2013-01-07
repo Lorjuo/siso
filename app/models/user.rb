@@ -1,5 +1,8 @@
 class User < ActiveRecord::Base
   rolify
+
+  self.per_page = 10
+  
   # Include default devise modules. Others available are:
   # :token_authenticatable, :confirmable,
   # :lockable, :timeoutable and :omniauthable
@@ -7,7 +10,7 @@ class User < ActiveRecord::Base
      :recoverable, :rememberable, :trackable, :validatable, :authentication_keys => [:login]
 
   # Setup accessible (or protected) attributes for your model
-  attr_accessible :username, :email, :password, :password_confirmation, :remember_me, :login, :role_ids
+  attr_accessible :username, :email, :language, :password, :password_confirmation, :remember_me, :login, :role_ids
   # attr_accessible :title, :body
   
   # Virtual attribute for authenticating by either username or email
