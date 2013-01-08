@@ -11,6 +11,7 @@
     <tr>
       <th>Name</th>
       <th>Price</th>
+      <th>Category</th>
       <th></th>
       <th></th>
       <th></th>
@@ -22,6 +23,7 @@
     <tr>
       <td><%= product.name %></td>
       <td><%= product.price %></td>
+      <td><%= product.category.nil? ? "" : product.category.name %></td>
       <td><%= link_to 'Show', product %></td>
       <td><%= link_to 'Edit', edit_product_path(product) %></td>
       <td><%= link_to 'Destroy', product, confirm: 'Are you sure?', method: :delete %></td>

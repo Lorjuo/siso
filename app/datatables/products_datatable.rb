@@ -22,6 +22,7 @@ private
         # To be customized
         link_to(product.name, product),
         number_to_currency(product.price),
+        product.category.nil? ? "" : product.category.name,
         link_to('Show', product),
         link_to('Edit', Rails.application.routes.url_helpers.edit_product_path(product)),
         link_to('Destroy', product, confirm: 'Are you sure?', method: :delete)
@@ -36,10 +37,11 @@ private
   end
 
   def fetch_products
-    products = Product.order("#{sort_column} #{sort_direction}")
+    products = Product.joins(:category)
+    products = products.order("#{sort_column} #{sort_direction}")
     products = products.page(page).per_page(per_page)
     if params[:sSearch].present?
-      products = products.where("name like :search or price like :search", search: "%#{params[:sSearch]}%")
+      products = products.where("products.name like :search or price like :search or categories.name like :search", search: "%#{params[:sSearch]}%")
     end
     products
   end

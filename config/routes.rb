@@ -1,5 +1,8 @@
 Siso::Application.routes.draw do
 
+  resources :categories
+
+
   resources :requests
 
   resources :products do

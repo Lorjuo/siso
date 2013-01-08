@@ -17,4 +17,7 @@
   <dt>Price:</dt>
   <dd><%= @product.price %></dd>
 
+
+  <dt>Category:</dt>
+  <dd><%= @product.category.nil? ? "" : @product.category.name %></dd>
 </dl>

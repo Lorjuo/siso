@@ -18,7 +18,7 @@ $(document).ready(function() {
 	  "sDom": "<'row-fluid'<'span6'l><'span6'f>r>t<'row-fluid'<'span6'i><'span6'p>>",
 	  "sPaginationType": "bootstrap",
     "bJQueryUI": false,
-    "bProcessing": true,
+    "bProcessing": false,
     "bServerSide": true,
     "sAjaxSource": $('.datatable').data('source')
 	});
