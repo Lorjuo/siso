@@ -55,7 +55,7 @@ private
   end
 
   def sort_column
-    columns = %w[name price]
+    columns = %w[products.name price categories.name]
     columns[params[:iSortCol_0].to_i]
   end
 
