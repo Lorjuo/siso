@@ -37,4 +37,8 @@ Siso::Application.configure do
 
   # Needed for devise
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+
+  # Logging
+  config.logger = Logger.new(STDOUT)
+  config.log_level = :debug
 end
