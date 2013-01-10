@@ -29,6 +29,9 @@ gem 'faker', '~> 1.0.1'
   gem 'jquery-rails'
   gem 'jquery-ui-rails'
 
+# Mysql
+gem 'mysql2'
+
 # Pagination
 gem 'will_paginate', '3.0.3'
 gem 'bootstrap-will_paginate', '0.0.6'
@@ -47,7 +50,6 @@ gem 'state_machine'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 group :development, :test do
-  gem 'mysql2'
   gem 'rspec-rails', '~> 2.12.0'
 end
 
