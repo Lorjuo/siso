@@ -69,5 +69,11 @@ module Siso
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    # Rails 3.2 initialization process that conflicts with Heroku slug compilation.
+    # The solution is very simple.
+    # All you have to do is to set the Rails 3.2 initialize_on_precompile configuration
+    # to false in your application.rb file.
+    config.assets.initialize_on_precompile = false
   end
 end
