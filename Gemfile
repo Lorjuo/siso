@@ -29,8 +29,7 @@ gem 'faker', '~> 1.0.1'
   gem 'jquery-rails'
   gem 'jquery-ui-rails'
 
-# Mysql
-gem 'mysql2'
+gem 'mysql2', '~> 0.3.11'
 
 # Pagination
 gem 'will_paginate', '3.0.3'
