@@ -25,6 +25,7 @@ namespace :deploy do
   end
 
   task :setup_config, roles: :app do
+  	puts "current_path: #{current_path}"
     sudo "ln -nfs #{current_path}/config/apache.conf /etc/apache2/sites-available/#{application}"
     run "mkdir -p #{shared_path}/config"
     put File.read("config/database.production.yml"), "#{shared_path}/config/database.yml"

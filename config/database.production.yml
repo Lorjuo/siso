@@ -1,0 +1,9 @@
+production:
+  adapter: mysql2
+  database: siso_production
+  encoding: utf8
+  username: root
+  password: wrkjus
+  host: 127.0.0.1
+  port: 3306
+  timeout: 5000
