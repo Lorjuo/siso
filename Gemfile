@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.9'
+gem 'rails', '3.2.11'
 gem 'bcrypt-ruby', '3.0.1'
 
 # Authorization
@@ -29,6 +29,9 @@ gem 'faker', '~> 1.0.1'
   gem 'jquery-rails'
   gem 'jquery-ui-rails'
 
+# Mysql
+gem 'mysql2'
+
 # Pagination
 gem 'will_paginate', '3.0.3'
 gem 'bootstrap-will_paginate', '0.0.6'
@@ -48,9 +51,6 @@ gem 'state_machine'
 
 group :development, :test do
   gem 'rspec-rails', '~> 2.12.0'
-
-  # Mysql
-  gem 'mysql2', '~> 0.3.11'
 end
 
 group :test do
@@ -64,7 +64,6 @@ end
 
 group :production do
   gem 'pg', '0.12.2'
-  gem 'activerecord-mysql2-adapter'
 end
 
 
